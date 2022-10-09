@@ -1,0 +1,41 @@
+name: flutter_example_test
+description: A new Flutter project.
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+
+dependencies:
+  bloc: ^8.1.0  
+  cached_network_image: ^3.2.2
+  dartz: ^0.10.1
+  dio: ^4.0.6
+  equatable: ^2.0.3
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.1
+  flutter_staggered_grid_view: ^0.6.2
+  injector: ^2.0.0
+
+
+
+dev_dependencies:
+  bloc_test: ^9.1.0
+  flutter_test:
+    sdk: flutter  
+  very_good_analysis: ^3.0.2
+
+
+
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/logo.gif
+    - assets/placeholder.jpg
+    - assets/placeholder.gif
