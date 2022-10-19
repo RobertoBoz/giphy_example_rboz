@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "301898640510",
+    "project_id": "giphy-rboz",
+    "storage_bucket": "giphy-rboz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301898640510:android:33692e9eea77178c18bc2f",
+        "android_client_info": {
+          "package_name": "com.example.flutter_example_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "301898640510-fbafghnfvl6t11ab04au52j98k29ftks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJvhvDgpnYaj4iJxSr7xPcdBCCPxbXcyM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "301898640510-fbafghnfvl6t11ab04au52j98k29ftks.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

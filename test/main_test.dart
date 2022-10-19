@@ -14,14 +14,13 @@ void main() {
       testWidgets('Render Main App', (tester) async {
         await tester.pumpWidget( App());
         await tester.pumpAndSettle(const Duration(seconds: 5));
-         expect(find.byType(App), findsOneWidget);
+        expect(find.byType(App), findsOneWidget);
         });
     },
   );
 
-   group('GlobalCubit',() {   
+  group('GlobalCubit',() {   
       late GlobalCubit globalCubit;  
-     
       setUp(() {          
         globalCubit = GlobalCubit();        
       });
