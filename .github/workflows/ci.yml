@@ -22,7 +22,7 @@ jobs:
       - run: flutter pub get
       - run: flutter analyze
       - run: flutter test
-job:
+
   android:
     stage: build
     script:
@@ -35,8 +35,6 @@ job:
         - build/artifacts/
     tags:
       - flutter
-
-    
 
   # build_ios:
   #   name: Build Flutter (iOS)
