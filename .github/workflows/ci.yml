@@ -22,6 +22,38 @@ jobs:
       - run: flutter pub get
       - run: flutter analyze
       - run: flutter test
+      script:
+        - flutter build apk --release --build-number ${CI_JOB_ID:0:8}
+        - flutter build appbundle --release --build-number ${CI_JOB_ID:0:8}
+        - sudo bundle install
+        - cd android && bundle exec fastlane move_files
+      artifacts:
+        paths:
+          - build/artifacts/
+      tags:
+        - flutter
+
+android:
+  stage: build
+  script:
+    - flutter build apk --release --build-number ${CI_JOB_ID:0:8}
+    - flutter build appbundle --release --build-number ${CI_JOB_ID:0:8}
+    - sudo bundle install
+    - cd android && bundle exec fastlane move_files
+  artifacts:
+    paths:
+      - build/artifacts/
+  tags:
+    - flutter
+
+firebasedistribution:
+  stage: deploy
+  dependencies:
+    - android
+  script:
+    - cd android && bundle exec fastlane playstore_internal_release
+  tags:
+    - flutter
 
   # build_ios:
   #   name: Build Flutter (iOS)
